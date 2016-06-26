@@ -7,7 +7,6 @@ import classes from './SheetView.css'
 
 export const SheetView = () => (
   <div className={classes.self}>
-    <h4>Character Sheet</h4>
     <section className={classes.section}>
       <Vitals className={classes.vitals} />
       <Bonuses className={classes.bonuses} />
