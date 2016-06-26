@@ -44,12 +44,18 @@ const config = {
     colors : true
   },
   compiler_vendor : [
+    'classnames',
     'history',
     'react',
+    'react-dom',
     'react-redux',
     'react-router',
     'react-router-redux',
-    'redux'
+    'redux',
+    'redux-form',
+    'redux-thunk',
+    'reselect',
+    'reselect'
   ],
 
   // ----------------------------------
