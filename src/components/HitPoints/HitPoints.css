@@ -8,6 +8,7 @@
 }
 
 .label {
+  font-weight: bold;
   order: 3;
   text-align: center;
   text-transform: uppercase;
