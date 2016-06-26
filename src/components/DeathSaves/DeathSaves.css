@@ -1,0 +1,14 @@
+.self {
+  padding: .5em;
+}
+
+.count {
+  justify-content: flex-end;
+}
+
+.label {
+  font-size: .75em;
+  order: 2;
+  text-align: center;
+  text-transform: uppercase;
+}

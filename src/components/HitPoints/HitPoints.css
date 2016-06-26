@@ -1,0 +1,34 @@
+.self {
+  padding: .5em;
+}
+
+.maximumLabel,
+.label {
+  font-size: .75em;
+}
+
+.label {
+  order: 3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.maximum {
+  align-items: center;
+  justify-content: space-around;
+  order: 1;
+}
+
+.maximumLabel {
+  text-transform: capitalize;
+}
+
+.maximumValue,
+.value {
+  text-align: center;
+}
+
+.value {
+  font-size: 2.5em;
+  order: 2;
+}
