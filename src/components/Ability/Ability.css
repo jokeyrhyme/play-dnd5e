@@ -1,0 +1,17 @@
+.self {
+  padding: .5em;
+}
+
+.label {
+  font-size: .75em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modifier,
+.value {
+  font-size: 2em;
+  text-align: center;
+  width: 3em;
+}

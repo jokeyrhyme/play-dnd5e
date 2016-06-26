@@ -1,0 +1,23 @@
+.self {
+  align-items: center;
+  padding: .5em;
+}
+
+.label,
+.value {
+  text-align: center;
+}
+
+.label {
+  font-size: .75em;
+  font-weight: bold;
+  margin: 0 auto;
+  order: 2;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 1.5em;
+  order: 1;
+  width: 2.5em;
+}

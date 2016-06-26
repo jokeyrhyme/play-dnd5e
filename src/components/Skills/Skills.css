@@ -1,0 +1,10 @@
+.self {
+  padding: .2em;
+}
+
+.label {
+  font-size: .75em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
