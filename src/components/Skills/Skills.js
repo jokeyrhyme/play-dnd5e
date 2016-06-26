@@ -2,17 +2,16 @@ import React, { PropTypes } from 'react'
 import classnames from 'classnames'
 
 import { SKILLS } from '../../values/skills.js'
-import FlexColumn from '../FlexColumn/FlexColumn.js'
+import Field from '../Field/Field.js'
 import Skill from '../Skill/Skill.js'
 import classes from './Skills.css'
 
 export const Skills = ({ className }) => (
-  <FlexColumn className={classnames(classes.self, className)}>
+  <Field className={classnames(classes.self, className)} label='skills' labelBelow>
     {SKILLS.map((type) => (
       <Skill key={type} type={type} />
     ))}
-    <label className={classes.label}>Skills</label>
-  </FlexColumn>
+  </Field>
 )
 
 Skills.propTypes = {

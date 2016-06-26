@@ -1,13 +1,4 @@
-.self {
-  padding: .5em;
-}
-
-.label {
-  font-size: .75em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
+.self {}
 
 .modifier {
   font-size: 2em;

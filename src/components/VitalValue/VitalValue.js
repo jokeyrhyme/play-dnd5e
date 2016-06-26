@@ -1,16 +1,13 @@
 import React, { PropTypes } from 'react'
 import classnames from 'classnames'
 
-import FlexColumn from '../FlexColumn/FlexColumn.js'
+import Field from '../Field/Field.js'
 import classes from './VitalValue.css'
 
 export const VitalValue = ({ className, type, value }) => (
-  <FlexColumn className={classnames(classes.self, className)}>
-    <label className={classes.label}>
-      {type}
-    </label>
+  <Field className={classnames(classes.self, className)} label={type} labelBelow>
     <input className={classes.number} type='number' min={0} defaultValue={value || 10} />
-  </FlexColumn>
+  </Field>
 )
 
 VitalValue.propTypes = {

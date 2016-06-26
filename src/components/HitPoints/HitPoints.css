@@ -1,17 +1,8 @@
-.self {
-  padding: .5em;
-}
+.self {}
 
-.maximumLabel,
-.label {
-  font-size: .75em;
-}
-
-.label {
-  font-weight: bold;
-  order: 3;
-  text-align: center;
-  text-transform: uppercase;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .maximum {
@@ -21,6 +12,7 @@
 }
 
 .maximumLabel {
+  font-size: .75em;
   text-transform: capitalize;
 }
 

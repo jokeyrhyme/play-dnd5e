@@ -1,15 +1,5 @@
-.self {
-  padding: .5em;
-}
+.self {}
 
 .count {
   justify-content: flex-end;
-}
-
-.label {
-  font-size: .75em;
-  font-weight: bold;
-  order: 2;
-  text-align: center;
-  text-transform: uppercase;
 }

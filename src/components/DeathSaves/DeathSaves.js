@@ -2,17 +2,19 @@ import React, { PropTypes } from 'react'
 import classnames from 'classnames'
 
 import DeathSavesCount from '../DeathSavesCount/DeathSavesCount.js'
-import FlexColumn from '../FlexColumn/FlexColumn.js'
+import Field from '../Field/Field.js'
 import classes from './DeathSaves.css'
 
+const FIELD_PROPS = {
+  label: 'death saves',
+  labelBelow: true
+}
+
 export const DeathSaves = ({ className, failures, successes }) => (
-  <FlexColumn className={classnames(classes.self, className)}>
-    <label className={classes.label}>
-      death saves
-    </label>
+  <Field className={classnames(classes.self, className)} {...FIELD_PROPS}>
     <DeathSavesCount className={classes.count} type='successes' />
     <DeathSavesCount className={classes.count} type='failures' />
-  </FlexColumn>
+  </Field>
 )
 
 DeathSaves.propTypes = {

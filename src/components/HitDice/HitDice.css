@@ -1,20 +1,7 @@
-.self {
-  padding: .5em;
-}
-
-.maximumLabel,
-.label {
-  font-size: .75em;
-}
-
-.label {
-  font-weight: bold;
-  order: 3;
-  text-align: center;
-  text-transform: uppercase;
-}
+.self {}
 
 .maximum {
+  font-size: .75em;
   align-items: center;
   justify-content: space-around;
   order: 1;
