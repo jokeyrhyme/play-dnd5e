@@ -3,9 +3,11 @@
 }
 
 .label {
+  font-size: .75em;
   margin-left: .2em;
   order: 3;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .proficient {
