@@ -1,6 +1,7 @@
 .self {}
 
-.scores,
-.vitals {
+.section {
+  display: inline-block;
   max-width: 20em;
+  vertical-align: top;
 }

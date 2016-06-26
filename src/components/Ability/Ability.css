@@ -9,9 +9,17 @@
   text-transform: uppercase;
 }
 
+.modifier {
+  font-size: 2em;
+  width: 3em;
+}
+
 .modifier,
 .value {
-  font-size: 2em;
   text-align: center;
-  width: 3em;
+}
+
+.value {
+  font-size: 1.5em;
+  width: 4em;
 }
