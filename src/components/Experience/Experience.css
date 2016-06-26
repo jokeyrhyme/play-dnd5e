@@ -1,0 +1,14 @@
+.self {
+  justify-content: space-between;
+}
+
+.level,
+.xp {
+  text-align: center;
+}
+
+.level {
+  width: 4em;
+}
+
+.xp {}
