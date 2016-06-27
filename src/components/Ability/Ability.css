@@ -1,6 +1,7 @@
 .self {}
 
 .modifier {
+  display: block;
   font-size: 2em;
   width: auto;
 }

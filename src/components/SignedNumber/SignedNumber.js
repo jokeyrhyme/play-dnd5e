@@ -7,7 +7,7 @@ const getSign = (value) => value < 0 ? '-' : '+'
 
 export const SignedNumber = ({ className, value }) => (
   <span className={classnames(classes.self, className)}>
-    {getSign(value)}{value}
+    {getSign(value)}{Math.abs(value)}
   </span>
 )
 
