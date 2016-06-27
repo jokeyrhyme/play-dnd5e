@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import classnames from 'classnames'
 import { connect } from 'react-redux'
 
-import { getProficiencyBonus, getToon } from '../../routes/Sheet/modules/toon.js'
+import { getProficiencyBonus } from '../../routes/Sheet/modules/toon.js'
 import FlexColumn from '../FlexColumn/FlexColumn.js'
 import Bonus from '../Bonus/Bonus.js'
 import classes from './Bonuses.css'

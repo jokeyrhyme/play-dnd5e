@@ -15,3 +15,5 @@ export const ABILITIES = [
   WISDOM,
   CHARISMA
 ]
+
+export const ABILITIES_KEYS = ABILITIES.map((ability) => ability.toLowerCase())

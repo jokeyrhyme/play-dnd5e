@@ -4,6 +4,21 @@ const test = require('ava')
 
 const toon = require('../src/lib/toon.js')
 
+test('abilityModifier', (t) => {
+  const fixtures = [
+    { score: 1, expected: -5 },
+    { score: 8, expected: -1 },
+    { score: 10, expected: 0 },
+    { score: 11, expected: 0 },
+    { score: 12, expected: 1 },
+    { score: 13, expected: 1 },
+    { score: 20, expected: 5 }
+  ]
+  fixtures.forEach(({ score, expected }) => {
+    t.is(toon.abilityModifier(score), expected)
+  })
+})
+
 test('proficiencyBonus', (t) => {
   const fixtures = [
     { level: 1, expected: 2 },

@@ -2,7 +2,8 @@
 
 import { createSelector } from 'reselect'
 
-import { proficiencyBonus } from '../../../lib/toon.js'
+import { ABILITIES_KEYS } from '../../../values/abilities.js'
+import { abilityModifier, proficiencyBonus } from '../../../lib/toon.js'
 
 export const getToon = (state) => state.form.toon
 
@@ -19,4 +20,20 @@ export const getXp = createSelector(
 export const getProficiencyBonus = createSelector(
   getLevel,
   (level) => proficiencyBonus(level)
+)
+
+export const getAbilityScores = createSelector(
+  getToon,
+  (toon) => ABILITIES_KEYS.reduce((prev, ability) => {
+    prev[ability] = toon[ability].value
+    return prev
+  }, {})
+)
+
+export const getAbilityModifiers = createSelector(
+  getAbilityScores,
+  (abilityScores) => ABILITIES_KEYS.reduce((prev, ability) => {
+    prev[ability] = abilityModifier(abilityScores[ability])
+    return prev
+  }, {})
 )
