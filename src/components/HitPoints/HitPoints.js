@@ -5,8 +5,13 @@ import Field from '../Field/Field.js'
 import FlexRow from '../FlexRow/FlexRow.js'
 import classes from './HitPoints.css'
 
+const SELF_PROPS = {
+  containerClass: classes.container,
+  labelBelow: true
+}
+
 export const HitPoints = ({ className, max, type, value }) => (
-  <Field className={classnames(classes.self, className)} containerClass={classes.container} label={`${type} hit points`} labelBelow>
+  <Field className={classnames(classes.self, className)} label={`${type} hit points`} {...SELF_PROPS}>
     <input className={classes.value} type='number' min={0} title={`${type} value`} defaultValue={value || 0} />
     {type === 'current' && <FlexRow className={classes.maximum}>
       <label className={classes.maximumLabel}>{`${type} maximum`}</label>
