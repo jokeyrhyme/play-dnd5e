@@ -10,8 +10,8 @@ import classes from './SavingThrows.css'
 
 export const SavingThrows = ({ abilityModifiers, className }) => (
   <Field className={classnames(classes.self, className)} label='saving throws' labelBelow>
-    {ABILITIES_KEYS.map((type) => (
-      <Skill key={type} type={type} value={abilityModifiers[type]} />
+    {ABILITIES_KEYS.map((ability) => (
+      <Skill key={ability} type={ability} value={abilityModifiers[ability]} />
     ))}
   </Field>
 )
