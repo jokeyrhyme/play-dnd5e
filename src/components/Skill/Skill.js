@@ -10,7 +10,7 @@ export const Skill = ({ className, type, value }) => (
       {type.toLowerCase().replace(/_/g, ' ')}
     </label>
     <input className={classes.proficient} type='checkbox' />
-    <input className={classes.value} type='number' defaultValue={value || 1} />
+    <span className={classes.value}>{value || 0}</span>
   </FlexRow>
 )
 
