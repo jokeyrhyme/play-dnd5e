@@ -1,7 +1,9 @@
 // We only need to import the modules necessary for initial render
 import CoreLayout from '../layouts/CoreLayout/CoreLayout'
+import Choices from './Choices/index.js'
+import Effects from './Effects/index.js'
 import Sheet from './Sheet/index.js'
-import CounterRoute from './Counter'
+// import CounterRoute from './Counter'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -11,7 +13,9 @@ export const createRoutes = (store) => ({
   component: CoreLayout,
   indexRoute: Sheet,
   childRoutes: [
-    CounterRoute(store)
+    // CounterRoute(store),
+    Choices,
+    Effects
   ]
 })
 

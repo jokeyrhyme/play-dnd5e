@@ -6,11 +6,15 @@ export const Header = () => (
   <div>
     <h1>Play D&D 5e</h1>
     <IndexLink to='/' activeClassName={classes.activeRoute}>
-      Home
+      Sheet
     </IndexLink>
     {' · '}
-    <Link to='/counter' activeClassName={classes.activeRoute}>
-      Counter
+    <Link to='/choices' activeClassName={classes.activeRoute}>
+      Choices
+    </Link>
+    {' · '}
+    <Link to='/effects' activeClassName={classes.activeRoute}>
+      Effects
     </Link>
   </div>
 )
