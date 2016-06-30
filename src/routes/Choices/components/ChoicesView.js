@@ -22,5 +22,11 @@ ChoicesView.propTypes = {
 export default reduxForm({
   destroyOnUnmount: false,
   fields: Object.keys(QUESTIONS),
-  form: 'choices'
+  form: 'choices',
+  initialValues: Object.keys(QUESTIONS).reduce((prev, id) => {
+    if (QUESTIONS[id].defaultValue) {
+      prev[id] = QUESTIONS[id].defaultValue
+    }
+    return prev
+  }, {})
 })(ChoicesView)
