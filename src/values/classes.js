@@ -13,7 +13,7 @@ export const SORCEROR = 'SORCEROR'
 export const WARLOCK = 'WARLOCK'
 export const WIZARD = 'WIZARD'
 
-export const CLASSES = [
+export const CLASSES = {
   BARBARIAN,
   BARD,
   CLERIC,
@@ -26,4 +26,4 @@ export const CLASSES = [
   SORCEROR,
   WARLOCK,
   WIZARD
-]
+}
