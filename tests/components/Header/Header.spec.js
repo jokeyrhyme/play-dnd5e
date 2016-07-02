@@ -19,18 +19,26 @@ describe('(Component) Header', () => {
 
   describe('Navigation links...', () => {
 
-    it('Should render a Link to Home route', () => {
+    it('Should render a Link to Sheet route', () => {
       expect(_wrapper.contains(
         <IndexLink activeClassName={classes.activeRoute} to='/'>
-          Home
+          Sheet
         </IndexLink>
       )).to.be.true
     })
 
-    it('Should render a Link to Counter route', () => {
+    it('Should render a Link to Choices route', () => {
       expect(_wrapper.contains(
-        <Link activeClassName={classes.activeRoute} to='/counter'>
-          Counter
+        <Link activeClassName={classes.activeRoute} to='/choices'>
+          Choices
+        </Link>
+      )).to.be.true
+    })
+
+    it('Should render a Link to Effects route', () => {
+      expect(_wrapper.contains(
+        <Link activeClassName={classes.activeRoute} to='/effects'>
+          Effects
         </Link>
       )).to.be.true
     })
